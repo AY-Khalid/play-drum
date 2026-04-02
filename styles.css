@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url("images/drum1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+
+.bg1{
+    background: url("images/drum1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg2{
+    background: url("images/drum2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg3{
+    background: url("images/drum3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.container-btn{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid #ffd700;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: #ffffff;
+
+    /* prevent copying */
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        touch-action: manipulation;
+    
+}
+
+.container-btn:hover{
+   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.playing{
+    transform: scale(105%);
+    border: 2px solid #ffd700;
+    transition: all 0.1s;
+}
+
+.container-btn kbd{
+    font-size: 54px;
+    color: #ffffff;
+}
+.container-btn p{
+    color: #ffd700;
+}
+
+
+@media (max-width: 630px){
+.main-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60%;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 630px) and (max-width: 1081px) {
+    .main-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 60%;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-btn{
+        width: 200px;
+        height: 200px;
+    }
+
+        .container-btn kbd {
+            font-size: 92px;
+        }
+    
+        .container-btn p {
+            font-size: 32px;
+
+        }
+}
