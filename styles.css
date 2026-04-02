@@ -96,17 +96,20 @@ body{
 .main-container {
     justify-content: center;
     flex-wrap: wrap;
-    height: 60%;
+    height: 100%;
     }
     body{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+                .container-btn {
+                    width: 6rem;
+                    height: 6rem;
+                }
 }
 
-@media (min-width: 630px) and (max-width: 1081px) {
+@media (min-width: 631px) and (max-width: 1081px) {
     .main-container {
         justify-content: center;
         flex-wrap: wrap;
